@@ -1,0 +1,294 @@
+      :root {
+            /* Paleta de colores personalizada */
+            --color-orange: #FF6B35;
+            --color-orange-light: #FF8E53;
+            --color-orange-dark: #E55A2B;
+            --color-blue: #1A76D2;
+            --color-blue-light: #42A5F5;
+            --color-blue-dark: #1565C0;
+            --color-gray: #616161;
+            --color-gray-light: #9E9E9E;
+            --color-gray-lighter: #E0E0E0;
+            --color-gray-dark: #424242;
+            --color-white: #FFFFFF;
+            
+            /* Tipografía */
+            --font-family: 'Inter', sans-serif;
+        }
+
+        body {
+            font-family: var(--font-family);
+            background-color: var(--color-white);
+            color: var(--color-gray-dark);
+            line-height: 1.6;
+        }
+
+        /* Personalización de Bootstrap con nueva paleta */
+        .bg-primary {
+            background-color: var(--color-orange) !important;
+        }
+
+        .text-primary {
+            color: var(--color-orange) !important;
+        }
+
+        .bg-secondary {
+            background-color: var(--color-blue) !important;
+        }
+
+        .text-secondary {
+            color: var(--color-blue) !important;
+        }
+
+        .btn-primary {
+            background-color: var(--color-orange);
+            border-color: var(--color-orange);
+            color: var(--color-white);
+            font-weight: 500;
+            letter-spacing: 0.5px;
+            border-radius: 8px;
+            padding: 12px 28px;
+            box-shadow: 0 4px 6px rgba(255, 107, 53, 0.25);
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary:hover {
+            background-color: var(--color-orange-dark);
+            border-color: var(--color-orange-dark);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(255, 107, 53, 0.3);
+        }
+
+        .btn-secondary {
+            background-color: var(--color-blue);
+            border-color: var(--color-blue);
+            color: var(--color-white);
+            font-weight: 500;
+            letter-spacing: 0.5px;
+            border-radius: 8px;
+            padding: 12px 28px;
+            box-shadow: 0 4px 6px rgba(26, 118, 210, 0.25);
+            transition: all 0.3s ease;
+        }
+
+        .btn-secondary:hover {
+            background-color: var(--color-blue-dark);
+            border-color: var(--color-blue-dark);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(26, 118, 210, 0.3);
+        }
+
+        .btn-outline-primary {
+            color: var(--color-orange);
+            border-color: var(--color-orange);
+            border-radius: 8px;
+            padding: 12px 28px;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+            transition: all 0.3s ease;
+        }
+
+        .btn-outline-primary:hover {
+            background-color: var(--color-orange);
+            color: var(--color-white);
+            transform: translateY(-2px);
+        }
+
+        .card {
+            border: none;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease;
+            overflow: hidden;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+        }
+
+        .navbar {
+            background-color: var(--color-white);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+        }
+
+        .navbar-brand, .navbar-nav .nav-link {
+            color: var(--color-gray-dark) !important;
+            font-weight: 500;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: var(--color-orange) !important;
+        }
+
+        .navbar-nav .nav-link.active {
+            color: var(--color-orange) !important;
+            font-weight: 600;
+        }
+
+        .material-icons {
+            vertical-align: middle;
+            margin-right: 5px;
+        }
+
+        .hero-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('img/ing-en-construccion-1200x675.webp');
+            background-size: cover;
+            background-position: center;
+            color: var(--color-white);
+            padding: 150px 0;
+            margin-bottom: 80px;
+        }
+
+        .feature-icon {
+            width: 70px;
+            height: 70px;
+            background-color: var(--color-orange);
+            color: var(--color-white);
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            font-size: 32px;
+            box-shadow: 0 4px 12px rgba(255, 107, 53, 0.3);
+        }
+
+        .feature-icon.blue {
+            background-color: var(--color-blue);
+            box-shadow: 0 4px 12px rgba(26, 118, 210, 0.3);
+        }
+
+        .section-title {
+            position: relative;
+            padding-bottom: 15px;
+            margin-bottom: 40px;
+        }
+
+        .section-title:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 60px;
+            height: 4px;
+            background-color: var(--color-orange);
+            border-radius: 2px;
+        }
+
+        .section-title.center:after {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .footer {
+            background-color: var(--color-gray-dark);
+            color: var(--color-white);
+            padding: 60px 0 30px;
+            margin-top: 80px;
+        }
+
+        .form-control {
+            border-radius: 8px;
+            padding: 12px 16px;
+            border: 1px solid var(--color-gray-lighter);
+            background-color: var(--color-white);
+            color: var(--color-gray-dark);
+        }
+
+        .form-control:focus {
+            border-color: var(--color-orange);
+            box-shadow: 0 0 0 0.25rem rgba(255, 107, 53, 0.25);
+        }
+
+        .badge {
+            border-radius: 6px;
+            padding: 6px 12px;
+            font-weight: 500;
+        }
+
+        .badge.bg-primary {
+            background-color: var(--color-orange) !important;
+        }
+
+        .badge.bg-secondary {
+            background-color: var(--color-blue) !important;
+        }
+
+        .stat-number {
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--color-orange);
+            line-height: 1;
+        }
+
+        .stat-label {
+            font-size: 1rem;
+            color: var(--color-gray);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .testimonial-card {
+            border-left: 4px solid var(--color-orange);
+        }
+
+        .testimonial-card.blue {
+            border-left-color: var(--color-blue);
+        }
+
+        .pricing-card {
+            border: 2px solid transparent;
+            transition: all 0.3s ease;
+        }
+
+        .pricing-card.featured {
+            border-color: var(--color-orange);
+            transform: scale(1.05);
+        }
+
+        .pricing-card.featured .card-header {
+            background-color: var(--color-orange);
+            color: var(--color-white);
+        }
+
+        .gradient-bg {
+            background: linear-gradient(135deg, var(--color-orange-light) 0%, var(--color-blue-light) 100%);
+        }
+
+        .nav-pills .nav-link.active {
+            background-color: var(--color-orange);
+        }
+
+        .nav-pills .nav-link {
+            color: var(--color-gray);
+        }
+
+        .platform-card {
+            height: 100%;
+        }
+
+        .platform-img {
+            height: 200px;
+            object-fit: cover;
+            width: 100%;
+        }
+
+        .service-icon {
+            font-size: 48px;
+            color: var(--color-orange);
+            margin-bottom: 20px;
+        }
+
+        .service-card {
+            text-align: center;
+            padding: 30px 20px;
+            height: 100%;
+        }
+
+        .bg-light-custom {
+            background-color: #f8f9fa;
+        }
+        button{
+margin: 4px;
+        }
